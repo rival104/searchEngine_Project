@@ -1,0 +1,17 @@
+{
+  "name": "searchengine",
+  "version": "1.0.0",
+  "description": "search engine for indexing website.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Navidur Rahman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.5.8",
+    "request": "^2.88.0",
+    "unfluff": "^3.2.0"
+  }
+}
