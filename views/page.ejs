@@ -1,0 +1,12 @@
+<% include partials/header %>
+<div class="container">
+    <div class="row">
+		<h1><%= page.title %></h1>
+		<p><strong>Description:</strong> <%=page.desc%></p>
+		<p><strong>Url:</strong> <a href="<%= page.url%>"><%= page.url%></a></p>
+		<p><strong>lastModified:</strong> <%=page.lastModified%></p>
+		<p><strong>lastIndexed:</strong> <%=page.lastIndexed%></p>
+		<a href="/">Go back!</a>
+	</div>
+</div>
+<% include partials/footer %>

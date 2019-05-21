@@ -1,0 +1,23 @@
+<% include partials/header %>
+<div class="container">
+    <div class="row">
+		<h1>Results Page!!!</h1>
+
+		<ul>
+			<% for (const prop in data) { %>
+			  <li>
+				  <strong>
+					  <%= prop %>
+				  </strong> 
+				  - <a href="/page/<%= data[prop].pageId %>">Page <%= prop %></a>
+
+				   - <%= data[prop].frequency %>
+			  </li>
+			<% } %>
+		</ul>
+
+		<a href="/">Search Again!</a>
+	</div>
+</div>
+
+<% include partials/footer %>

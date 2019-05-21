@@ -1,1 +1,28 @@
-<h1>Homepage</h1>
+<% include partials/header %>
+<div class="container">
+    <div class="row">
+		<h1 style="text-align: center">Homepage</h1>
+
+		<h2 style="text-align: center">
+			ADMIN: Indexing Launcher
+		</h2>
+		<div style="width: 30%; margin: 25px auto;">
+			<form action="/addIndex" method="GET">
+				<input class="form-control" type="text" name="newUrl" placeholder="Url">
+				<input type="checkbox" name="rec" value="on"> Do recursive search<br></input>
+				<button class="btn btn-lg btn-info btn-block">Submit!</button>
+			</form>
+
+			<h2>
+				Search Entry
+			</h2>
+			<form action="/showResults" method="GET">
+				<input class="form-control" type="text" name="searchTerm" placeholder="Search">
+				<input type="checkbox" name="caseIgnore" value="on"> Case Insensetive<br></input>
+				 <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+			</form>
+		</div>
+  </div>
+</div>
+<% include partials/footer %>
+
